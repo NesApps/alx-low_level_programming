@@ -9,5 +9,4 @@ if (ret != len)
 {
 return 1;
 }
-return 0;
 }
