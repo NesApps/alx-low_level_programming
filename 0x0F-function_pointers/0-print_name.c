@@ -8,14 +8,10 @@
 * Return: nothing
 **/
 
+void print_name(char *name, void (*f)(char *))
+{
+if (name == NULL || f == NULL);
+return;
 
-void print_with_hello(char *name) {
-    printf("Hello, %s!\n", name);
+f(name);
 }
-
-int main() {
-    char *name = "Alice";
-    print_name(name, &print_with_hello); // prints "Hello, Alice!"
-    return 0;
-}
-
